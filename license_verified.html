@@ -1,0 +1,12 @@
+
+<head>
+    <title>License Verified</title>
+</head>
+<body>
+    <h1>License Verified</h1>
+    <p>Your extension <strong>"<span id="extName"></span>"</strong> is licensed successfully.</p>
+    <script>
+        document.getElementById("extName").textContent = chrome.runtime.getManifest().name;
+    </script>
+</body>
+

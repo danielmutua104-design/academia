@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Invalid License</title>
+</head>
+<body>
+    <h1>Invalid License</h1>
+    <p>The license for your extension <strong>"<span id="extName"></span>"</strong> is invalid.</p>
+    <p>Please contact the developer at <a href="https://abubakkarahmad.com">abubakkarahmad.com</a> for a valid license.</p>
+    <script>
+        document.getElementById("extName").textContent = chrome.runtime.getManifest().name;
+    </script>
+</body>
+</html>
